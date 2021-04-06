@@ -112,6 +112,13 @@ const warAndPeace = books.find(function (author) {
 console.log(warAndPeace);
 
 //how many books were written before 1900?
+const old = books.some(function (date) {
+  if (date.publishDate < 1900) {
+    return true;
+  }
+}).length;
+
+console.log(old);
 
 //was there at least one book published within the last 100 years?
 const century = books.some(function (book) {
