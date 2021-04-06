@@ -105,5 +105,12 @@ console.log(warAndPeace);
 //how many books were written before 1900?
 
 //was there at least one book published within the last 100 years?
+const century = books.some(function (book) {
+  if (2021 - book.publishDate >= 100) {
+    return true;
+  }
+});
+
+console.log(century);
 
 //was every book published within the last 100 years?
