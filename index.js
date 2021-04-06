@@ -95,6 +95,12 @@ const alphabet = books.sort(function (aLast, bLast) {
 
 console.log(alphabet);
 //Find who wrote War and Peace
+const warAndPeace = books.find(function (author) {
+  if (author.name === "War and Peace") {
+    return true;
+  }
+});
+console.log(warAndPeace);
 
 //how many books were written before 1900?
 
