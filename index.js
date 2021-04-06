@@ -78,9 +78,22 @@ const titles = [
 //"--- wrote --- in ---"
 
 //Sort books from oldest to most recent
+const years = books.sort(function (a, b) {
+  if (a.publishDate > b.publishDate) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+
+console.log(years);
 
 //sort books alphabetically
+const alphabet = books.sort(function (aLast, bLast) {
+  return aLast.name > bLast.name ? 1 : -1;
+});
 
+console.log(alphabet);
 //Find who wrote War and Peace
 
 //how many books were written before 1900?
