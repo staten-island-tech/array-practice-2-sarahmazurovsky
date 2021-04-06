@@ -114,3 +114,10 @@ const century = books.some(function (book) {
 console.log(century);
 
 //was every book published within the last 100 years?
+const allCentury = books.every(function (book) {
+  if (2021 - book.publishDate >= 100) {
+    return true;
+  }
+});
+
+console.log(allCentury);
